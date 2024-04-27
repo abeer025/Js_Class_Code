@@ -1041,7 +1041,7 @@
 //         elm.style.backgroundColor = "white";
 // }
 
-
+/* Flip Game  */
 // var gameGreeting = "Welcome to Flip Master!";
 // var gameRules = "You have 3 attempt to flip on any box you want and get Diamond"
 // Swal.fire(gameGreeting,gameRules);
@@ -1062,10 +1062,25 @@
 //         }
 // }
 
-var messageBox = document.getElementById
+/* var messageBox = document.getElementById
 ("messageBox");
 
 function cls() {
         console.log(messageBox);
         messageBox.style.display = "none";
+} */
+
+//  var inp = document.getElementById("inp");
+// function addInp() {
+//         console.log(inp.value);
+// }
+
+var inp = document.getElementById("inp");
+var showMessage = document.getElementById("showMessage");
+function addInp() {
+        if (inp.value.length !== 5) {
+                showMessage.innerHTML = "Input value can't be increse greater than 5 characters";
+        }else{
+                console.log(inp.value);
+        }
 }
