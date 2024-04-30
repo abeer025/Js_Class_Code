@@ -1075,12 +1075,37 @@ function cls() {
 //         console.log(inp.value);
 // }
 
-var inp = document.getElementById("inp");
-var showMessage = document.getElementById("showMessage");
-function addInp() {
-        if (inp.value.length !== 5) {
-                showMessage.innerHTML = "Input value can't be increse greater than 5 characters";
-        }else{
-                console.log(inp.value);
-        }
+// var inp = document.getElementById("inp");
+// var showMessage = document.getElementById("showMessage");
+// function addInp() {
+//         if (inp.value.length !== 5) {
+//                 showMessage.innerHTML = "Input value can't be increse greater than 5 characters";
+//         }else{
+//                 console.log(inp.value);
+//         }
+// }
+
+
+var box = document.getElementById("box");
+function changeClassToSq() {
+        box.className = "square" 
 }
+var box = document.getElementById("box");
+function changeClassToRec() {
+        box.className = "rectangular" 
+}
+var box = document.getElementById("box");
+function changeClassToCr() {
+        box.className = "circle" 
+}
+
+
+
+var box = document.getElementById("box");
+function changeClass(change) {
+        box.className = change
+}
+
+// DOM rule tagName in capitalLetter//
+var arr = document.getElementsByTagName("P")
+console.log(arr)
