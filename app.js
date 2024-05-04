@@ -1086,26 +1086,32 @@ function cls() {
 // }
 
 
-var box = document.getElementById("box");
-function changeClassToSq() {
-        box.className = "square" 
-}
-var box = document.getElementById("box");
-function changeClassToRec() {
-        box.className = "rectangular" 
-}
-var box = document.getElementById("box");
-function changeClassToCr() {
-        box.className = "circle" 
-}
+// var box = document.getElementById("box");
+// function changeClassToSq() {
+//         box.className = "square" 
+// }
+// var box = document.getElementById("box");
+// function changeClassToRec() {
+//         box.className = "rectangular" 
+// }
+// var box = document.getElementById("box");
+// function changeClassToCr() {
+//         box.className = "circle" 
+// }
 
 
 
-var box = document.getElementById("box");
-function changeClass(change) {
-        box.className = change
-}
+// var box = document.getElementById("box");
+// function changeClass(change) {
+//         box.className = change
+// }
 
-// DOM rule tagName in capitalLetter//
-var arr = document.getElementsByTagName("P")
-console.log(arr)
+// // DOM rule tagName in capitalLetter//
+// var arr = document.getElementsByTagName("P")
+// console.log(arr)
+
+// var main = document.getElementById("main")
+// console.log(arr)
+// var arr = main.getElementsByTagName("P")
+
+
