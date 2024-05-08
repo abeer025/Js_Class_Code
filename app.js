@@ -587,51 +587,35 @@
 // var a = new Date();
 // a.setDate(1);
 // a.setMonth(0);
-// // a.setDay(1) // dont have any option
+/* a.setDay(1) dont have any option */
 // a.setFullYear(2000);
 // a.setHours(12);
 // a.setMinutes(30);
 // a.setSeconds(45);
 // a.setMilliseconds(500);
-// // a.setTime(); // dont have any option
+/* a.setTime();  dont have any option */
 // console.log(a);
 
 // var a = new Date();
 // a.setDate(25);
 // a.setMonth(0);
-// // a.setDay(1) // dont have any option
+// /* a.setDay(1) dont have any option */
 // a.setFullYear(1998);
 // a.setHours(6);
 // a.setMinutes(0);
 // a.setSeconds(0);
 // a.setMilliseconds(0);
-// // a.setTime(); // dont have any option
+// /* a.setTime();  dont have any option */
 // console.log(a);
 
 //if need after 5 days from set given date 
-// var a = new Date(); // current date
-// a.setDate(new Date("03-31-2024").getDate()+5); // set date manually
-// a.setMonth(0);
-// a.setDay(1) // dont have any option
-// a.setFullYear(1998);
-// a.setHours(6);
-// a.setMinutes(0);
-// a.setSeconds(0);
-// a.setMilliseconds(0);
-// a.setTime(); // dont have any option
-// console.log(a);
+//  var a = new Date(); /* current date */
+//  a.setDate(new Date("03-31-2024").getDate()+5); /* set date manually */
+//  console.log(a);
 
 //if set previous date 
-// var a = new Date(); // current date
-// a.setDate(new Date("03-31-2024").getDate()-5); // set date manually
-// a.setMonth(0);
-// // a.setDay(1) // dont have any option
-// a.setFullYear(1998);
-// a.setHours(6);
-// a.setMinutes(0);
-// a.setSeconds(0);
-// a.setMilliseconds(0);
-// // a.setTime(); // dont have any option
+// var a = new Date(); /* current date */
+// a.setDate(new Date("03-31-2024").getDate()-5); /* set date manually */
 // console.log(a);
 
 // // if set manually prac //
@@ -1061,6 +1045,7 @@
 //                 alert("3 attempted try agin later!")
 //         }
 // }
+//*/
 
 /* var messageBox = document.getElementById
 ("messageBox");
@@ -1114,4 +1099,56 @@ function cls() {
 // console.log(arr)
 // var arr = main.getElementsByTagName("P")
 
+
+// DOM //
+// var main = document.getElementById("main");
+// var second = document.getElementById("second");
+// console.log(second.previousSibling);
+
+// var main = document.getElementById("main");
+// console.log(main.childNodes[0]);
+// main.childNodes[0].nodeValue = "ABCDEFG";
+
+// var main = document.getElementById("main");
+// var arr = main.childNodes;
+// console.log(arr);
+
+// for (var i = 0; i < arr.length; i++) {
+//          console.log(arr[i]);
+//          if (arr[i].nodeType == 1){
+//         console.log(arr[i].nodeName);
+//         arr[i].style.color = "red"
+//          }
+// }
+
+// function addElement() {
+//         var pera = document.createElement("P");
+//         var text = document.createTextNode("Here is a Dummy text created by javascript");
+//         pera.appendChild(text);
+//         console.log(pera);
+// }
+
+
+
+function addElement() {
+        var inp = document.getElementById("inp");
+        var pera = document.createElement("p"); 
+        var text = prompt("Enter text"); 
+        var textNode = document.createTextNode(text); 
+        inp.value += text;
+        pera.appendChild(textNode);
+        console.log(pera); 
+    }
+    
+function cls() {
+        inp.value = "";
+}
+
+// create buttn by java
+// name of delete and add 
+// every para delete should have btn
+// function cls() {
+//         var button = document.createElement("button") 
+//         inp.value = "";
+// }
 
