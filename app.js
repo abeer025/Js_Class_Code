@@ -1129,26 +1129,34 @@ function cls() {
 // }
 
 
-
-function addElement() {
-        var inp = document.getElementById("inp");
-        var pera = document.createElement("p"); 
-        var text = prompt("Enter text"); 
-        var textNode = document.createTextNode(text); 
-        inp.value += text;
-        pera.appendChild(textNode);
-        console.log(pera); 
-    }
+///* To do app *///
+// get value from user using input
+// create para in div with js
+// append to in pera using get div html
+// create buttn by js
+// name of delete and add 
+// every para delete should have btn
     
 function cls() {
         inp.value = "";
 }
 
-// create buttn by java
-// name of delete and add 
-// every para delete should have btn
-// function cls() {
-//         var button = document.createElement("button") 
-//         inp.value = "";
-// }
+function addElement() {
+        var inp = document.getElementById("inp");
+        var parent = document.getElementById("parent");
+        var pera = document.createElement("p");
+        var text = inp.value; 
+        var textNode = document.createTextNode(text);
+        pera.appendChild(textNode);
+        
+        var button = document.createElement("button");
+        button.textContent = "Delete";
+        button.onclick = function() {
+            parent.removeChild(pera); // Remove the paragraph when the button is clicked
+        };
+        
+        pera.appendChild(button); // Append the delete button to the paragraph
+        parent.appendChild(pera); // Append the paragraph to the parent element
+    }
+    
 
