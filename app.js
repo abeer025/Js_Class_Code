@@ -1129,34 +1129,92 @@ function cls() {
 // }
 
 
-///* To do app *///
-// get value from user using input
-// create para in div with js
-// append to in pera using get div html
-// create buttn by js
-// name of delete and add 
-// every para delete should have btn
-    
-function cls() {
-        inp.value = "";
-}
 
-function addElement() {
-        var inp = document.getElementById("inp");
-        var parent = document.getElementById("parent");
-        var pera = document.createElement("p");
-        var text = inp.value; 
-        var textNode = document.createTextNode(text);
-        pera.appendChild(textNode);
-        
-        var button = document.createElement("button");
-        button.textContent = "Delete";
-        button.onclick = function() {
-            parent.removeChild(pera); // Remove the paragraph when the button is clicked
-        };
-        
-        pera.appendChild(button); // Append the delete button to the paragraph
-        parent.appendChild(pera); // Append the paragraph to the parent element
+/*try to add set attribute using js*/
+// function abc(){
+//         console.log("Abc works");
+// }
+//         var input = document.createElement("input");
+//         var text = inp.value; 
+//         var textNode = document.createTextNode(text);
+//         input.appendChild(input.value);
+//         input.setAttribute("class", "abc");
+//         input.setAttribute("id", "abcd");
+//         input.setAttribute("onfocus", "abcd()");
+
+// objects //
+
+// var student1 = {
+//         rollNo : "Abc-1234",
+//         name : "Abeer",
+//         cnic : "4769989",
+//         contactNo : "0564686",
+// }
+
+// //check the object (NTN)
+// console.log(student1);
+// //check the object with property (NTN)
+// console.log(student1.name);
+// student1.name = "Iqbal"
+// //change the object property (NTN)
+// console.log(student1);
+// console.log(student1.name);
+// //delete the object property (NTN)
+// delete student1.contactNo;
+// console.log(student1);
+// //find the object property (NTN)
+// var a = "inst" in student1;
+// studen1.age = 25;
+
+// console.log(student1);
+
+
+var students = [
+        {
+            rollNo: "Abc-123",
+            name: "Abeer"
+        },
+        {
+            rollNo: "Abc-456",
+            name: "Iqbal"
+        },
+        {
+            rollNo: "xyz-1234",
+            name: "Jawwad"
+        },
+        {
+            rollNo: "uio-14",
+            name: "Daniyal"
+        },
+        {
+            rollNo: "Abc-99000",
+            name: "Saim"
+        },
+        {
+            rollNo: "okgkt678",
+            name: "Ayub"
+        },
+        {
+            rollNo: "ilp00-456",
+            name: "amir"
+        },
+        {
+            rollNo: "xyz-pojk00",
+            name: "saud"
+        },
+        {
+            rollNo: "0pl-14",
+            name: "huzaifa"
+        },
+        {
+            rollNo: "hjlb-9900",
+            name: "khan"
+        }
+    ];
+    
+    var a = [];
+    for (var i = 0; i < students.length; i++) {
+        a.push(students[i]);        
     }
+    console.log(a);
     
-
