@@ -401,7 +401,7 @@
 // m = k.toUpperCase();
 // console.log(m);
 
-                    //Word find with different methods//
+//Word find with different methods//
 //word find = consecteture //
 //replace by = ABCD //
 // var a = "Lorem ipsum dolor sit amet consectetur adipisicing elit.Dolorem, perferendis illum eius odio qui nisi fuga reprehenderit laudantium ab eligendi, id fugiat ratione inventore dolore.Quos minima vero laudantium doloribus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, perferendis illum eius odio qui nisi fuga reprehenderit laudantium ab eligendi, id fugiat ratione inventore dolore.Quos minima vero laudantium doloribus."
@@ -418,7 +418,7 @@
 //     break;
 //     }
 // }
-        //self doit//
+//self doit//
 // if (b !== -1){
 //     var beforeWord = a.slice(0,b)
 //     var newWord = "ABCD"
@@ -426,7 +426,7 @@
 //     console.log(beforeWord + newWord + afterWord)
 
 // }
-        //sir method if using loop change all word in para//
+//sir method if using loop change all word in para//
 // for (var i = 0; i < a.length; i++){
 //     var word = a.slice(i , i+11);
 //     console.log(word);
@@ -440,13 +440,13 @@
 //         console.log(updatedPara);
 //     break;
 //     }
- 
+
 // }
- // in this string method only change firstone//
+// in this string method only change firstone//
 // var b = a.replace("consectetur","ABCD");
 // console.log(b);
 
- // in this string method change all//
+// in this string method change all//
 // var b = a.replace(/consectetur/g,"ABCD");
 // console.log(b);
 
@@ -699,11 +699,11 @@
 //         var finalAmount = amount - percentageAmount; 
 //         console.log("Final amount after discount:", finalAmount);
 //     }
-    
+
 //     calculateDiscount(10000); 
 //     calculateDiscount(20000); 
 //     calculateDiscount(30000); 
-    
+
 // function func1() {
 //   console.log("Function 1");
 // }
@@ -747,14 +747,14 @@
 // // calculate the sum of all numbers of this Aarray
 
 // function calculate(){
-        // var sum = 0
-        // for (var i = 0; i < amounts.length; i++){
-                // sum += amounts[i];
-                // console.log(sum);//
-                // }
-                // return sum
-                // }
-                // var add = calculate()
+// var sum = 0
+// for (var i = 0; i < amounts.length; i++){
+// sum += amounts[i];
+// console.log(sum);//
+// }
+// return sum
+// }
+// var add = calculate()
 // console.log(add)
 
 
@@ -799,13 +799,13 @@
 // console.log(str);
 
 //write a function which tells letter count of (word)
-     // var word = "Hello"
-        // function letterCount(){
-        //         var len = word.length
-        //         return len
-        //         }
-        //         var wordLen = letterCount()
-        //         console.log(wordLen)
+// var word = "Hello"
+// function letterCount(){
+//         var len = word.length
+//         return len
+//         }
+//         var wordLen = letterCount()
+//         console.log(wordLen)
 
 // write a function which tells that the word which is passed in the arguement is palindrome or not (same pronounciation from start to end and from end to start), example : Mom, Madam. these are palindrome.
 
@@ -825,20 +825,20 @@
 // console.log(isPalindrome("Madam"));  // Output: true
 // console.log(isPalindrome("hello"));  // Output: false
 
-                    
+
 // create a function that takes 2 peramters, in first perameter take date and in second peramter take number of days
 // the task is showing the date after the counting of second peramter according the date of first peramter.
-  
+
 // // prac
 // function tellTime() {
 //         var nowDate = new Date();
 //         var newDate = new Date(nowDate);
 //         newDate.setDate(nowDate.getDate() + 5);
 //         var nowDays = newDate.getDate(); 
-    
+
 //         return nowDays,newDate; 
 //     }
-    
+
 //     var dateandDays = tellTime();
 //     console.log(dateandDays);
 
@@ -848,21 +848,21 @@
 //         a.setDate(new Date(dt).getDate() + num);
 //         console.log(a);
 //       }
-      
+
 //       dateValues("05-18-2024", 45);
 
 // Write a function name calculateSquareRoot taking 1 perameter, calculate square root of the number which is given in perameter. and return the value.
 // function calculateSquare(num) {
 //         return num * num;
 //       }
-      
+
 //       var a = calculateSquare(5);
 //       var b = calculateSquare(9);
 //       var c = calculateSquare(13);
-      
+
 //       console.log(a, b, c);
- 
-      
+
+
 // Practice
 // var num = prompt("Enter a num")
 // function calculateSquareRoot(num) {
@@ -1169,52 +1169,186 @@ function cls() {
 // console.log(student1);
 
 
-var students = [
+// var students = [
+//         {
+//                 rollNo: "Abc-123",
+//                 name: "Abeer"
+//         },
+//         {
+//                 rollNo: "Abc-456",
+//                 name: "Iqbal"
+//         },
+//         {
+//                 rollNo: "xyz-1234",
+//                 name: "Jawwad"
+//         },
+//         {
+//                 rollNo: "uio-14",
+//                 name: "Daniyal"
+//         },
+//         {
+//                 rollNo: "Abc-99000",
+//                 name: "Saim"
+//         },
+//         {
+//                 rollNo: "okgkt678",
+//                 name: "Ayub"
+//         },
+//         {
+//                 rollNo: "ilp00-456",
+//                 name: "amir"
+//         },
+//         {
+//                 rollNo: "xyz-pojk00",
+//                 name: "saud"
+//         },
+//         {
+//                 rollNo: "0pl-14",
+//                 name: "huzaifa"
+//         },
+//         {
+//                 rollNo: "hjlb-9900",
+//                 name: "khan"
+//         }
+// ];
+
+// //     var a = [];
+// //     for (var i = 0; i < students.length; i++) {
+// //         a.push(students[i]);        
+// //     }
+// //     console.log(a);
+
+
+// var input = document.getElementById("inp");
+// function searchResult() {
+//         for (i = 0; i < students.length; i++) {
+//                 var std = students[i];
+//                 if (std.rollNo == inp.value) {
+//                         console.log(std);
+//                 }
+//         }
+// }
+
+// Create a Quiz App. Features are Given below.
+
+ // a. show single question at a time.
+ // b. show current Question fio on the top and also show total 
+
+// Questions Quantity.
+
+ // c. show all options.dx
+
+ // d. show next question button.
+
+// Process
+
+// 1. create data for Quiz App.
+ // 2. Create HTML for QUIZ App.
+// 3. Create CSS for Quiz App and proper Design.
+ // 4. apply All Element IDs in HTML.
+
+// quiz app//
+
+
+var allQuizQuestions = [
         {
-            rollNo: "Abc-123",
-            name: "Abeer"
+            question: "HTML stands for?",
+            options: [
+                "Hyper Text Markup Language",
+                "Incorrect",
+                "Incorrect",
+                "Incorrect"
+            ],
+            correctAnswer: "Hyper Text Markup Language",
         },
         {
-            rollNo: "Abc-456",
-            name: "Iqbal"
+            question: "CSS stands for?",
+            options: [
+                "Incorrect",
+                "Cascading Style Sheet",
+                "Incorrect",
+                "Incorrect"
+            ],
+            correctAnswer: "Cascading Style Sheet",
         },
         {
-            rollNo: "xyz-1234",
-            name: "Jawwad"
+            question: "JS stands for?",
+            options: [
+                "Incorrect",
+                "Incorrect",
+                "Incorrect",
+                "Java Scripts"
+            ],
+            correctAnswer: "Java Scripts",
         },
         {
-            rollNo: "uio-14",
-            name: "Daniyal"
+            question: "JS stands for?",
+            options: [
+                "Incorrect",
+                "Incorrect",
+                "Incorrect",
+                "Java Scripts"
+            ],
+            correctAnswer: "Java Scripts",
         },
         {
-            rollNo: "Abc-99000",
-            name: "Saim"
-        },
-        {
-            rollNo: "okgkt678",
-            name: "Ayub"
-        },
-        {
-            rollNo: "ilp00-456",
-            name: "amir"
-        },
-        {
-            rollNo: "xyz-pojk00",
-            name: "saud"
-        },
-        {
-            rollNo: "0pl-14",
-            name: "huzaifa"
-        },
-        {
-            rollNo: "hjlb-9900",
-            name: "khan"
+            question: "JS stands for?",
+            options: [
+                "Incorrect",
+                "Incorrect",
+                "Incorrect",
+                "Java Scripts"
+            ],
+            correctAnswer: "Java Scripts",
         }
     ];
     
-    var a = [];
-    for (var i = 0; i < students.length; i++) {
-        a.push(students[i]);        
+    var currentQuestionNo = document.getElementById("currentQuestionNo");
+    var totalQuestionNo = document.getElementById("totalQuestions");
+    var question = document.getElementById("question");
+    var options = document.getElementById("options");
+    
+    var currentIndex = 0;
+    var marks = 0;
+    
+    totalQuestionNo.innerHTML = allQuizQuestions.length;
+    
+    function nextQuestion() {
+        currentIndex++;
+        if (currentIndex >= allQuizQuestions.length) {
+            alert(`Quiz completed! Your score is ${marks} out of ${allQuizQuestions.length}`);
+            currentIndex = 0;
+            marks = 0;
+        }
+        renderQuestion();
     }
-    console.log(a);
+    
+    function checkQuestion(selectedOption) {
+        if (selectedOption === allQuizQuestions[currentIndex].correctAnswer) {
+            marks++;
+        }
+        nextQuestion();
+    }
+    
+    function renderQuestion() {
+        var currentQuestion = allQuizQuestions[currentIndex];
+        currentQuestionNo.innerHTML = currentIndex + 1;
+        question.innerHTML = currentQuestion.question;
+    
+        options.innerHTML = "";
+        currentQuestion.options.forEach(option => {
+            var button = document.createElement("button");
+            button.innerText = option;
+            button.className = "btn btn-danger option";
+            button.onclick = function() {
+                checkQuestion(option);
+            };
+            var div = document.createElement("div");
+            div.className = "col-md p-2";
+            div.appendChild(button);
+            options.appendChild(div);
+        });
+    }
+    
+    renderQuestion();
     
