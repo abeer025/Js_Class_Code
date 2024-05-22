@@ -1250,105 +1250,155 @@ function cls() {
 // quiz app//
 
 
-var allQuizQuestions = [
-        {
-            question: "HTML stands for?",
-            options: [
-                "Hyper Text Markup Language",
-                "Incorrect",
-                "Incorrect",
-                "Incorrect"
-            ],
-            correctAnswer: "Hyper Text Markup Language",
-        },
-        {
-            question: "CSS stands for?",
-            options: [
-                "Incorrect",
-                "Cascading Style Sheet",
-                "Incorrect",
-                "Incorrect"
-            ],
-            correctAnswer: "Cascading Style Sheet",
-        },
-        {
-            question: "JS stands for?",
-            options: [
-                "Incorrect",
-                "Incorrect",
-                "Incorrect",
-                "Java Scripts"
-            ],
-            correctAnswer: "Java Scripts",
-        },
-        {
-            question: "JS stands for?",
-            options: [
-                "Incorrect",
-                "Incorrect",
-                "Incorrect",
-                "Java Scripts"
-            ],
-            correctAnswer: "Java Scripts",
-        },
-        {
-            question: "JS stands for?",
-            options: [
-                "Incorrect",
-                "Incorrect",
-                "Incorrect",
-                "Java Scripts"
-            ],
-            correctAnswer: "Java Scripts",
-        }
-    ];
+// var allQuizQuestions = [
+//         {
+//             question: "HTML stands for?",
+//             options: [
+//                 "Hyper Text Markup Language",
+//                 "Incorrect",
+//                 "Incorrect",
+//                 "Incorrect"
+//             ],
+//             correctAnswer: "Hyper Text Markup Language",
+//         },
+//         {
+//             question: "CSS stands for?",
+//             options: [
+//                 "Incorrect",
+//                 "Cascading Style Sheet",
+//                 "Incorrect",
+//                 "Incorrect"
+//             ],
+//             correctAnswer: "Cascading Style Sheet",
+//         },
+//         {
+//             question: "JS stands for?",
+//             options: [
+//                 "Incorrect",
+//                 "Incorrect",
+//                 "Incorrect",
+//                 "Java Scripts"
+//             ],
+//             correctAnswer: "Java Scripts",
+//         },
+//         {
+//             question: "JS stands for?",
+//             options: [
+//                 "Incorrect",
+//                 "Incorrect",
+//                 "Incorrect",
+//                 "Java Scripts"
+//             ],
+//             correctAnswer: "Java Scripts",
+//         },
+//         {
+//             question: "JS stands for?",
+//             options: [
+//                 "Incorrect",
+//                 "Incorrect",
+//                 "Incorrect",
+//                 "Java Scripts"
+//             ],
+//             correctAnswer: "Java Scripts",
+//         }
+//     ];
     
-    var currentQuestionNo = document.getElementById("currentQuestionNo");
-    var totalQuestionNo = document.getElementById("totalQuestions");
-    var question = document.getElementById("question");
-    var options = document.getElementById("options");
+//     var currentQuestionNo = document.getElementById("currentQuestionNo");
+//     var totalQuestionNo = document.getElementById("totalQuestions");
+//     var question = document.getElementById("question");
+//     var options = document.getElementById("options");
     
-    var currentIndex = 0;
-    var marks = 0;
+//     var currentIndex = 0;
+//     var marks = 0;
     
-    totalQuestionNo.innerHTML = allQuizQuestions.length;
+//     totalQuestionNo.innerHTML = allQuizQuestions.length;
     
-    function nextQuestion() {
-        currentIndex++;
-        if (currentIndex >= allQuizQuestions.length) {
-            alert(`Quiz completed! Your score is ${marks} out of ${allQuizQuestions.length}`);
-            currentIndex = 0;
-            marks = 0;
-        }
-        renderQuestion();
-    }
+//     function nextQuestion() {
+//         currentIndex++;
+//         if (currentIndex >= allQuizQuestions.length) {
+//             alert(`Quiz completed! Your score is ${marks} out of ${allQuizQuestions.length}`);
+//             currentIndex = 0;
+//             marks = 0;
+//         }
+//         renderQuestion();
+//     }
     
-    function checkQuestion(selectedOption) {
-        if (selectedOption === allQuizQuestions[currentIndex].correctAnswer) {
-            marks++;
-        }
-        nextQuestion();
-    }
+//     function checkQuestion(selectedOption) {
+//         if (selectedOption === allQuizQuestions[currentIndex].correctAnswer) {
+//             marks++;
+//         }
+//         nextQuestion();
+//     }
     
-    function renderQuestion() {
-        var currentQuestion = allQuizQuestions[currentIndex];
-        currentQuestionNo.innerHTML = currentIndex + 1;
-        question.innerHTML = currentQuestion.question;
+//     function renderQuestion() {
+//         var currentQuestion = allQuizQuestions[currentIndex];
+//         currentQuestionNo.innerHTML = currentIndex + 1;
+//         question.innerHTML = currentQuestion.question;
     
-        options.innerHTML = "";
-        currentQuestion.options.forEach(option => {
-            var button = document.createElement("button");
-            button.innerText = option;
-            button.className = "btn btn-danger option";
-            button.onclick = function() {
-                checkQuestion(option);
-            };
-            var div = document.createElement("div");
-            div.className = "col-md p-2";
-            div.appendChild(button);
-            options.appendChild(div);
-        });
-    }
+//         options.innerHTML = "";
+//         currentQuestion.options.forEach(option => {
+//             var button = document.createElement("button");
+//             button.innerText = option;
+//             button.className = "btn btn-danger option";
+//             button.onclick = function() {
+//                 checkQuestion(option);
+//             };
+//             var div = document.createElement("div");
+//             div.className = "col-md p-2";
+//             div.appendChild(button);
+//             options.appendChild(div);
+//         });
+//     }
     
-    renderQuestion();
+//     renderQuestion();
     
+
+// function createObj(name,age,contact) {
+//     return{
+//         name,
+//         age,
+//         contact
+//     };
+// }
+// var Obj = createObj = ("Abeer",10,"897798")
+// console.log(obj)
+// constructor of object 
+
+// function CreateStudent(name,rollNumber,contact){
+// this.name = name;
+// this.rollNumber = rollNumber;
+// this.contact = contact;
+// }
+// CreateStudent.prototype.inst = "SMIT";
+
+// var obj = new CreateStudent('Abeer','AI-339', '126894');
+// console.log(obj);
+
+
+// var obj = {
+//     id: 1,
+//     name: "ABC",
+//     age:18,
+// };
+
+// var keys = Object.keys(obj);
+// console.log(keys);
+
+// var values = Object.values(obj);
+// console.log(values);
+
+// var entries = Object.entries(obj);
+// console.log(entries);
+
+// var a = ["A","B","C",[1,2,3,["a","b","c"]]];
+//  console.log(a);
+
+// b = a.flat(Infinity);
+// console.log(b);
+
+// array.isArray
+//window.location.href
+//window.location.href=""
+//window.location.assign=""
+//window.location.replace=""
+//
